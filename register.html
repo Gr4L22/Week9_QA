@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/header.css" />
+    <link rel="stylesheet" type="text/css" href="./css/nav_bar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/side_bar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/form.css" />
+
+    <title>Register</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <div class="container1">
+        <a href="./index.html"><img src="./img/logo.png" /></a>
+        <div class="title">
+          <h1>Exp&Mana</h1>
+          <a href="register.html"><button class="b-ton">Menu</button></a>
+        </div>
+        <p>The gamer zone</p>
+      </div>
+    </header>
+    <!--Nav Bar-->
+    <div class="container2">
+      <ul>
+        <li><a class="games" href="">FIFA</a></li>
+        <li><a class="games" href="">DotA2</a></li>
+        <li><a class="games" href="">LoL</a></li>
+        <li><a class="games" href="">C.S.</a></li>
+        <li><a class="games" href="">CoD</a></li>
+      </ul>
+    </div>
+    <div class="text">
+      <!--Form title-->
+      <h1>Register to our weekly news letter</h1>
+      <p>Be part of the e-sports word</p>
+    </div>
+    <div class="form">
+      <!--Form body-->
+      <form>
+        <div class="two-elements">
+          <div class="one-element">
+            <label for="full_name">Full Name</label>
+            <div class="error">
+              <input
+                type="text"
+                id="full_name"
+                placeholder="Enter your Name and Last Name"
+              />
+              <p id="error_name">Error Invalid Name</p>
+            </div>
+          </div>
+          <div class="one-element">
+            <label for="mail">Your Mail</label>
+            <div class="error">
+              <input type="email" id="mail" placeholder="Put your mail" />
+              <p id="error_mail">Error Invalid eMail</p>
+            </div>
+          </div>
+        </div>
+        <div class="two-elements">
+          <div class="one-element">
+            <label for="password">Create your pass</label>
+            <div class="error">
+              <input
+                type="password"
+                id="password"
+                placeholder="Numbers, uppercase and lowercase"
+              />
+              <p id="error_pass">Error Invalid Password</p>
+            </div>
+          </div>
+          <div class="one-element">
+            <label for="confirm_pass">Re-confirm your pass</label>
+            <div class="error">
+              <input
+                type="password"
+                id="confirm_pass"
+                placeholder="Re whrite your password"
+              />
+              <p id="error_rePass">Error Invalid Pass Confirmation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="submit_button">
+          <input id="button" value="Send" />
+        </div>
+      </form>
+    </div>
+    <footer>
+      <!--Footer-->
+      <div class="susc">
+        <p>Be part of the faster growing E-Sport newsletter Exp&Mana News!</p>
+        <p>Send us an Emal to work@expandmana.com</p>
+      </div>
+    </footer>
+    <script src="./js/validators.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

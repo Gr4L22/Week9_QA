@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+}
+.side-bar {
+  background-color: teal;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.side-bar h3 {
+  vertical-align: center;
+  text-decoration: underline;
+  text-align: center;
+  padding: 0;
+  margin: 0px 0px 3px 0px;
+}
+.social {
+  margin: auto;
+}
+.side-bar img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Adds & Sponsors */
+.box2 {
+  width: 100%;
+  display: flex;
+  background-color: tomato;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.adds {
+  padding: 5px;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.textadd {
+  margin: auto;
+  text-align: center;
+}
+.adds p {
+  vertical-align: top;
+}
+.adds img {
+  width: 50%;
+  margin: 3px;
+  background-position: center;
+  background-size: cover;
+}
+.textadd h2 {
+  padding-top: 15px;
+  margin: 10px;
+}
+
+.suscribe {
+  display: flex;
+  align-content: flex-end;
+  background-color: rosybrown;
+  color: whitesmoke;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+    sans-serif;
+  font-size: 12px;
+  padding: 20px;
+}
+.suscribe p {
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+}
+.suscribe a {
+  margin: auto;
+}
+.suscribe button {
+  border: 4px solid red;
+  background-color: yellow;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 154px;
+  height: 154px;
+  margin: auto;
+}
+.suscribe a :hover {
+  border: 4px solid yellow;
+  background-color: red;
+}
+@media (max-width: 480px) {
+  .textadd h2 {
+    padding-top: 3px;
+    margin: 5px;
+  }
+  .suscribe {
+    flex-direction: column;
+  }
+  .suscribe p {
+    font-size: 1.1rem;
+  }
+  .suscribe button {
+    width: 130px;
+    height: 40px;
+    border: 1px solid red;
+  }
+}
+@media (min-width: 768px) {
+  .side {
+    justify-content: flex-start;
+    width: 35%;
+  }
+  .side-bar {
+    height: auto;
+    padding: 10px 0px;
+  }
+  .box2 {
+    height: auto;
+  }
+  .social {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .side-bar img {
+    width: 100px;
+    height: 100px;
+  }
+  .side-bar h3 {
+    font-size: 2.5rem;
+  }
+  .suscribe {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .side {
+    justify-content: flex-start;
+    width: 25%;
+  }
+}

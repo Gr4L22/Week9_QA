@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .container2 {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    border-bottom: 3px gold solid;
+    border-top: 3px gold solid;
+    background: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .container2 ul {
+    margin: auto;
+    padding: 5px;
+  }
+  .container2 li {
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  .container2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,93 @@
+.text {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(yellow, red);
+}
+.text h1 {
+  padding: 5px;
+}
+.text p {
+  padding: 5px;
+  text-decoration: underline;
+  font-style: italic;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 5px;
+  background-color: lightslategray;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+input:focus {
+  border: 3px solid orange;
+}
+input:hover {
+  border: 3px solid lightblue;
+}
+label {
+  font-weight: bolder;
+}
+.two-elements {
+  padding: 8px 8px 0px 8px;
+}
+.one-element {
+  width: auto;
+}
+.error {
+  display: flex;
+  justify-content: space-between;
+}
+.error {
+  display: flex;
+  flex-direction: column;
+}
+.error p {
+  display: none;
+  color: red;
+  font-size: 25px;
+  padding: 0px 25px;
+  margin: auto;
+  background-color: cornsilk;
+  border-radius: 3px;
+}
+input[id="button"] {
+  width: 100%;
+  background-color: green;
+  color: white;
+  font-size: 2rem;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+input[id="button"]:hover {
+  background-color: red;
+}
+.submit_button {
+  padding: 0px 20px;
+}
+@media (min-width: 768px) {
+  .two-elements {
+    display: flex;
+    justify-content: space-between;
+  }
+  .one-element {
+    width: 45%;
+  }
+  .form {
+    font-size: 1.5rem;
+  }
+}
